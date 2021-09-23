@@ -6,35 +6,42 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum=""
+    android:weightSum="8"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <!--Ctrl + space: gợi ý từ khóa-->
     <!--android:orientation="vertical"-->
-    <TextView
-        android:layout_weight="4"
-        android:gravity="center_vertical"
-        android:background="#FFFEB3"
-        android:text="View 1"
-        android:textSize="25sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
-    <TextView
-        android:layout_weight="4"
-        android:gravity="center_vertical"
-        android:background="#0072FF"
-        android:text="View 2"
-        android:textSize="25sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:textColor="#ffff"
+            android:gravity="center"
+            android:background="#f20"
+            android:text="A"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"/>
 
 
 
     </LinearLayout>
 
 
+   <LinearLayout
+       android:layout_weight="1"
+       android:background="#FF1100"
+       android:textSize="25sp"
+       android:layout_width="match_parent"
+       android:layout_height="0dp">
 
-
+        android:layout_width=""
+        android:layout_height="">
+   </LinearLayout>
 
 </LinearLayout>
